@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Display All Page</title>
+    </head>
+    <body>
+        <center>
+            <h1>Display All Data</h1>
+            {% for i in book %}
+                <a href="{% url 'display' i.id %}">{{i.bname}}</a>
+            {% endfor %}
+            <br>
+            <a href="{% url 'register' %}">Register</a>
+            <br>
+            <a href="{% url 'login' %}">Login</a>
+            <br>
+            <a href="{% url 'add' %}">Add New Book</a>
+        </center>
+    </body>
+</html>

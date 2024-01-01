@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Display Page</title>
+    </head>
+    <body>
+        <center>
+            <h1>Display Books</h1>
+            <p>Book Name : {{ book.bname }}</p>
+            <p>Book Price : {{ book.bprice }}</p>
+            <p>Book Author : {{ book.bauthor }}</p>
+            <br>
+            <a href="{% url 'edit' book.id %}">Edit Book</a>
+            <br>
+            <a href="{% url 'delete' book.id %}">Delete Book</a>
+            <br>
+            <a href="{% url 'logout' %}">LogOut</a>
+        </center>
+    </body>
+</html>
